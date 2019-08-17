@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>我的商城</title>
+    <link rel="stylesheet" href="./css/iconfont.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/layui/css/layui.css">
 </head>
 
 <body>
@@ -14,9 +16,223 @@
     <!-- 头部结束 -->
     <!-- 内容区开始 -->
     <div class="contentMall">
-        
+        <div class="contentMall-jz">
+            <div class="contentMall-left">
+                <p class="contentMall-left-tit">账号管理</p>
+                <p class="contentMall-left-tit">订单中心</p>
+                <p class="contentMall-left-tit">积分查询</p>
+                <p class="contentMall-left-tit">好友列表</p>
+                <ul class="contentMall-left-list">
+                    <li class="on"><i class="icon iconfont">&#xe645;</i>基本信息</li>
+                    <li class="contentMall-bor"><i class="icon iconfont">&#xe645;</i>账号安全</li>
+                    <li class="contentMall-bor"><i class="icon iconfont">&#xe645;</i>账号绑定</li>
+                    <li><i class="icon iconfont">&#xe645;</i>订单管理</li>
+                    <li class="contentMall-bor"><i class="icon iconfont">&#xe645;</i>我的通知</li>
+                    <li><i class="icon iconfont">&#xe645;</i>积分明细</li>
+                    <li><i class="icon iconfont">&#xe645;</i>邀请好友</li>
+                </ul>
+            </div>
+            <div class="contentMall-right">
+                <div class="box">
+                    <div class="public-con">
+                        <div class="information-tit">基本信息</div>
+                        <div class="information-con">
+                            <div class="information-con-left"><img src="./images/tx.png" alt=""></div>
+                            <div class="information-con-right">
+                                <ul>
+                                    <li>用户名:&nbsp;&nbsp;<span class="information-name">丁一</span></li>
+                                    <li><span
+                                            class="information-dateof">级别:&nbsp;&nbsp;100级</span><span>有效期:&nbsp;&nbsp;2020-08-12</span>
+                                    </li>
+                                    <li><span>积分:&nbsp;&nbsp;3588</span><span class="information-btn">积分获取</span></li>
+                                    <li><span
+                                            class="information-dateof">E币数:&nbsp;&nbsp;100级</span><span>有效期:&nbsp;&nbsp;2080-08-12</span><span
+                                            class="information-btn">E币充值</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box active">
+                    <div class="public-con">
+                        <div class="information-tit">个人资料</div>
+                        <div class="security">
+                            <ul>
+                                <li>
+                                    <span><i class="security-xx">*</i>头像:</span><span class="security-img"><img
+                                            src="./images/tx.png" alt=""></span><span style="margin-top: 43px;"
+                                        class="information-btn">修改</span>
+                                </li>
+                                <li>
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label security-gg"><i
+                                                class="security-xx">*</i>用户名:</label>
+                                        <div class="layui-input-block security-inp">
+                                            <input type="text" name="title" required lay-verify="required"
+                                                placeholder="请输入标题" autocomplete="off" class="layui-input">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label security-gg"><i
+                                                class="security-xx">*</i>真实名字:</label>
+                                        <div class="layui-input-block security-inp">
+                                            <input type="text" name="title" required lay-verify="required"
+                                                placeholder="请输入标题" autocomplete="off" class="layui-input">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label security-gg"><i
+                                                class="security-xx">*</i>所在地区:</label>
+                                        <div data-toggle="distpicker">
+                                            <div class="form-group">
+                                                <select class="form-control" id="province1"></select>
+                                            </div>
+                                            <div class="form-group">
+                                                <select class="form-control" id="city1"></select>
+                                            </div>
+                                            <div class="form-group">
+                                                <select class="form-control" id="district1"></select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <form class="layui-form" action="">
+                                        <div class="layui-form-item">
+                                            <label style="width: 49px;" class="layui-form-label">性别:</label>
+                                            <div class="layui-input-block security-inp">
+                                                <input type="radio" name="sex" value="男" title="男">
+                                                <input type="radio" name="sex" value="女" title="女" checked>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </li>
+                                <li>
+                                    <div class="layui-form-item">
+                                        <label style="width: 49px;" class="layui-form-label">生日:</label>
+                                        <form name=form1>
+                                            <select class="form1-hj" name=YYYY onchange="YYYYMM(this.value)">
+                                                <option value="">年</option>
+                                            </select>
+                                            <select style="margin: 0 20px;" class="form1-hj" name=MM
+                                                onchange="MMDD(this.value)">
+                                                <option value="">月</option>
+                                            </select>
+                                            <select class="form1-hj" name=DD>
+                                                <option value="">日</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </li>
+                                <li>
+                                    <form class="layui-form" action="">
+                                        <div class="layui-form-item">
+                                            <label class="layui-form-label security-gg"><i
+                                                    class="security-xx">*</i>注册身份:</label>
+                                            <div class="layui-input-block security-inp">
+                                                <input type="radio" name="sex" value="老师" title="老师">
+                                                <input type="radio" name="sex" value="学生" title="学生" checked>
+                                                <input type="radio" name="sex" value="家长" title="家长">
+                                                <i>注:选择后不可更改</i>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">内容三</div>
+                <div class="box">内容四</div>
+                <div class="box">内容五</div>
+                <div class="box">内容六</div>
+                <div class="box">内容七</div>
+            </div>
+        </div>
     </div>
     <!-- 内容区结束 -->
 </body>
+
+<script src="./js/jquery.min.js"></script>
+<script src="js/distpicker.data.js"></script>
+<script src="js/distpicker.js"></script>
+<script src="js/main.js"></script>
+<script src="./css/layui/layui.js"></script>
+<script src="./css/layui/layui.all.js"></script>
+<script>
+    layui.use('form', function () {
+        var form = layui.form;
+    });
+
+    $(".contentMall-left-list li").on("click", function () {
+        var index = $(this).index();
+        $(this).addClass("on").siblings().removeClass("on");
+        $(".contentMall-right .box").eq(index).addClass("active").siblings().removeClass("active");
+    });
+    window.onload = function () {
+        strYYYY = document.form1.YYYY.outerHTML;
+        strMM = document.form1.MM.outerHTML;
+        strDD = document.form1.DD.outerHTML;
+        LastDay = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+        //先给年下拉框赋内容
+        var y = new Date().getFullYear();
+        var str = strYYYY.substring(0, strYYYY.length - 9);
+        for (var i = (y - 70); i < (y + 1); i++) //以今年为准，前30年，后30年
+        {
+            str += "<option value='" + i + "'> " + i + "年</option>\r\n";
+        }
+        document.form1.YYYY.outerHTML = str + "</select>";
+        document.form1.YYYY.value = y;
+        //赋月份的下拉框
+        var str = strMM.substring(0, strMM.length - 9);
+        for (var i = 1; i < 13; i++) {
+            str += "<option value='" + i + "'> " + i + "月</option>\r\n";
+        }
+        document.form1.MM.outerHTML = str + "</select>";
+        document.form1.MM.value = new Date().getMonth() + 1;
+        var n = LastDay[new Date().getMonth()];
+        if (new Date().getMonth() == 1 && IsRun(YYYYvalue)) n++;
+        writeDay(n); //赋日期下拉框
+        document.form1.DD.value = new Date().getDate();
+    }
+    function YYYYMM(str) //年发生变化时日期发生变化(主要是判断闰平年)
+    {
+        var MMvalue = document.form1.MM.options[document.form1.MM.selectedIndex].value;
+        // if (MMvalue == "") {
+        //     DD.outerHTML = strDD;
+        //     return;
+        // }
+        var n = LastDay[MMvalue - 1];
+        if (MMvalue == 2 && IsRun(str)) n++;
+        writeDay(n)
+    }
+    function MMDD(str) //月发生变化时日期联动
+    {
+        var YYYYvalue = document.form1.YYYY.options[document.form1.YYYY.selectedIndex].value;
+        // if (str == "") {
+        //     DD.outerHTML = strDD;
+        //     return;
+        // }
+        var n = LastDay[str - 1];
+        if (str == 2 && IsRun(YYYYvalue)) n++;
+        writeDay(n)
+    }
+    function writeDay(n) //据条件写日期的下拉框
+    {
+        var s = strDD.substring(0, strDD.length - 9);
+        for (var i = 1; i < (n + 1); i++)
+            s += "<option value='" + i + "'> " + i + "日</option>\r\n";
+        document.form1.DD.outerHTML = s + "</select>";
+    }
+    function IsRun(year) //判断是否闰平年
+    {
+        return (0 == year % 4 && (year % 100 != 0 || year % 400 == 0))
+    }
+</script>
 
 </html>
