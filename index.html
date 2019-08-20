@@ -13,6 +13,40 @@
 
 <body>
     <!-- 头部开始 -->
+    <div class="header">
+        <div class="header-1">
+            <p class="slogan">欢迎来到第二教育网积分商城</p>
+            <div class="register">
+                <div class="register-left">
+                    <p><img style="top: 16px;left: 0;" src="./images/topj.png" />请您登陆</p>
+                    <p><img style="top: 16px;left:78px;" src="./images/topj.png" />免费注册</p>
+                </div>
+                <div class="register-right">
+                    <img style="position: absolute;top: 11px;left: 0;" src="./images/gg.png" alt="">
+                    <ul>
+                        <li>会员空间</li>
+                        <li>会员帮助</li>
+                        <li>智慧课堂</li>
+                        <li>门户</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 导航 -->
+    <div class="navigation">
+        <div class="navigation-1">
+            <p class="logo"><img src="./images/logo.png" alt=""></p>
+            <p class="navigation-banner">积分商城</p>
+            <ul class="navswitch">
+                <li class="tabSwitch-nav"><span>首页</span></li>
+                <li><span>我要兑换</span></li>
+                <li><span>我的商城</span></li>
+                <li><span>帮助中心</span></li>
+            </ul>
+            <p class="telephoneHotline"><img src="./images/rx.png" alt=""></p>
+        </div>
+    </div>
     <!-- 头部结束 -->
     <!-- 内容区开始 -->
     <div class="contentMall">
@@ -33,7 +67,8 @@
                 </ul>
             </div>
             <div class="contentMall-right">
-                <div class="box">
+                <!-- 基本信息 -->
+                <div class="box active">
                     <div class="public-con">
                         <div class="information-tit">基本信息</div>
                         <div class="information-con">
@@ -53,7 +88,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="box active">
+                <!-- 账号安全 -->
+                <div class="box">
                     <div class="public-con">
                         <div class="information-tit">个人资料</div>
                         <div class="security">
@@ -69,7 +105,7 @@
                                                 class="security-xx">*</i>用户名:</label>
                                         <div class="layui-input-block security-inp">
                                             <input type="text" name="title" required lay-verify="required"
-                                                placeholder="请输入标题" autocomplete="off" class="layui-input">
+                                                placeholder="请输入用户名" autocomplete="off" class="layui-input">
                                         </div>
                                     </div>
                                 </li>
@@ -79,7 +115,7 @@
                                                 class="security-xx">*</i>真实名字:</label>
                                         <div class="layui-input-block security-inp">
                                             <input type="text" name="title" required lay-verify="required"
-                                                placeholder="请输入标题" autocomplete="off" class="layui-input">
+                                                placeholder="请输入真实名字" autocomplete="off" class="layui-input">
                                         </div>
                                     </div>
                                 </li>
@@ -130,32 +166,639 @@
                                 </li>
                                 <li>
                                     <form class="layui-form" action="">
-                                        <div class="layui-form-item">
+                                        <div class="layui-form-item identity">
                                             <label class="layui-form-label security-gg"><i
                                                     class="security-xx">*</i>注册身份:</label>
                                             <div class="layui-input-block security-inp">
                                                 <input type="radio" name="sex" value="老师" title="老师">
                                                 <input type="radio" name="sex" value="学生" title="学生" checked>
                                                 <input type="radio" name="sex" value="家长" title="家长">
-                                                <i>注:选择后不可更改</i>
                                             </div>
+                                            <i class="zsh">注:选择后不可更改</i>
                                         </div>
                                     </form>
                                 </li>
-                                <li></li>
+                                <li>
+                                    <div class="btn-z">确定</div>
+                                </li>
                             </ul>
+                        </div>
+                        <div class="information-tit pas-tit">修改密码</div>
+                        <div class="security">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label security-gg"><i class="security-xx">*</i>原密码:</label>
+                                <div class="layui-input-inline pas-inp">
+                                    <input type="password" name="password" placeholder="请输入原密码" autocomplete="off"
+                                        class="layui-input">
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label security-gg"><i class="security-xx">*</i>新密码:</label>
+                                <div class="layui-input-inline pas-inp">
+                                    <input type="password" name="password" placeholder="请输入新密码" autocomplete="off"
+                                        class="layui-input">
+                                </div>
+                            </div>
+                            <div class="btn-z">确定</div>
                         </div>
                     </div>
                 </div>
-                <div class="box">内容三</div>
-                <div class="box">内容四</div>
-                <div class="box">内容五</div>
-                <div class="box">内容六</div>
-                <div class="box">内容七</div>
+                <!-- 账号绑定 -->
+                <div class="box">
+                    <div class="public-con">
+                        <div class="information-tit">账号绑定</div>
+                        <div class="accountBinding">
+                            <div class="accountBinding-top">
+                                <div class="accountBinding-top-1"><img src="./images/qq-t.png" alt=""></div>
+                                <div class="accountBinding-top-2">
+                                    <p>QQ账号绑定</p>
+                                    <p>绑定后，您可直接使用QQ账号登陆网站服务</p>
+                                </div>
+                                <div class="accountBinding-top-3">
+                                    <!-- <p class="unbounded-1">未绑定</p> -->
+                                    <p class="unbounded-1 selected">已绑定</p>
+                                    <!-- <p class="immediatelyBinding" onclick="binding(0)">立即绑定</p> -->
+                                    <p class="immediatelyBinding selected-1" onclick="binding(1)">解除绑定</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accountBinding">
+                            <div class="accountBinding-botton">
+                                <div class="accountBinding-top-1 wx-z"><img src="./images/wx-t.png" alt=""></div>
+                                <div class="accountBinding-top-2">
+                                    <p>微信账号绑定</p>
+                                    <p>绑定后，您可直接使用QQ账号登陆网站服务</p>
+                                </div>
+                                <div class="accountBinding-top-3">
+                                    <div class="accountBinding-top-3">
+                                        <p class="unbounded-1">未绑定</p>
+                                        <!-- <p class="unbounded-1 selected">已绑定</p> -->
+                                        <p class="immediatelyBinding" onclick="binding(0)">立即绑定</p>
+                                        <!-- <p class="immediatelyBinding selected-1" onclick="binding(1)">解除绑定</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 订单管理 -->
+                <div class="box">
+                    <div class="public-con">
+                        <div class="information-tit">订单管理</div>
+                        <div class="orderManagement">
+                            <p class="theOrder orderSelected">
+                                <span>在线充值订单</span>
+                                <span class="gg-1"></span>
+                            </p>
+                            <p class="theOrder">
+                                <span>积分兑换订单</span>
+                                <span class="gg-1"></span>
+                            </p>
+                        </div>
+                        <div class="orderManagement-con">
+                            <div class="orderManagement-dd theOrder-con actives">
+                                <div class="orderManagement-dd-sx">
+                                    <div class="orderManagement-dd-sx-top">
+                                        <form class="layui-form" action="">
+                                            <div class="layui-form-item orderManagement-top-1">
+                                                <label class="layui-form-label orderManagement-geg">根据时间查询:</label>
+                                                <div class="layui-input-block">
+                                                    <input type="radio" name="sex" value="最近7天" title="最近7天">
+                                                    <input type="radio" name="sex" value="最近15天" title="最近15天" checked>
+                                                    <input type="radio" name="sex" value="最近30天" title="最近30天">
+                                                    <input type="radio" name="sex" value="开始" title="开始:">
+                                                    <!-- <div class="layui-input-inline"> -->
+                                                    <input type="text" class="layui-input" id="test3"
+                                                        placeholder="yyyy-MM-dd">
+                                                    <!-- </div> -->
+                                                    <span class="js-n">结束:</span>
+                                                    <!-- <div class="layui-input-inline"> -->
+                                                    <input type="text" class="layui-input" id="test2"
+                                                        placeholder="yyyy-MM-dd">
+                                                    <!-- </div> -->
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="orderManagement-dd-sx-bom">
+                                        <form class="layui-form" action="">
+                                            <div class="layui-form-item orderManagement-top-1">
+                                                <label class="layui-form-label orderManagement-geg">根据状态查询:</label>
+                                                <div class="layui-input-block">
+                                                    <input type="radio" name="sex" value="待支付" title="待支付">&nbsp;&nbsp;
+                                                    <input type="radio" name="sex" value="支付成功" title="支付成功" checked>
+                                                    <input type="radio" name="sex" value="支付失败" title="支付失败">
+                                                    <span class="queryBtn">查询</span>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div>
+                                    <table class="layui-table" lay-even="" lay-skin="nob">
+                                        <colgroup>
+                                            <col width="200">
+                                            <col width="150">
+                                            <col width="100">
+                                            <col width="100">
+                                            <col width="200">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>订单号</th>
+                                                <th>产品</th>
+                                                <th>详情信息</th>
+                                                <th>状态</th>
+                                                <th>时间</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>M3093147212715579</td>
+                                                <td>199元圣贤卡</td>
+                                                <td style="color:rgb(233, 43, 43);">圣贤卡购买</td>
+                                                <td>未付款</td>
+                                                <td>2019-08-19 15:26:21</td>
+                                            </tr>
+                                            <tr>
+                                                <td>M3093147212715579</td>
+                                                <td>199元圣贤卡</td>
+                                                <td style="color:rgb(233, 43, 43);">圣贤卡购买</td>
+                                                <td>未付款</td>
+                                                <td>2019-08-19 15:26:21</td>
+                                            </tr>
+                                            <tr>
+                                                <td>M3093147212715579</td>
+                                                <td>199元圣贤卡</td>
+                                                <td style="color:rgb(233, 43, 43);">圣贤卡购买</td>
+                                                <td>未付款</td>
+                                                <td>2019-08-19 15:26:21</td>
+                                            </tr>
+                                            <tr>
+                                                <td>M3093147212715579</td>
+                                                <td>199元圣贤卡</td>
+                                                <td style="color:rgb(233, 43, 43);">圣贤卡购买</td>
+                                                <td>未付款</td>
+                                                <td>2019-08-19 15:26:21</td>
+                                            </tr>
+                                            <tr>
+                                                <td>M3093147212715579</td>
+                                                <td>199元圣贤卡</td>
+                                                <td style="color:rgb(233, 43, 43);">圣贤卡购买</td>
+                                                <td>未付款</td>
+                                                <td>2019-08-19 15:26:21</td>
+                                            </tr>
+                                            <tr>
+                                                <td>M3093147212715579</td>
+                                                <td>199元圣贤卡</td>
+                                                <td style="color:rgb(233, 43, 43);">圣贤卡购买</td>
+                                                <td>未付款</td>
+                                                <td>2019-08-19 15:26:21</td>
+                                            </tr>
+                                            <tr>
+                                                <td>M3093147212715579</td>
+                                                <td>199元圣贤卡</td>
+                                                <td style="color:rgb(233, 43, 43);">圣贤卡购买</td>
+                                                <td>未付款</td>
+                                                <td>2019-08-19 15:26:21</td>
+                                            </tr>
+                                            <tr>
+                                                <td>M3093147212715579</td>
+                                                <td>199元圣贤卡</td>
+                                                <td style="color:rgb(233, 43, 43);">圣贤卡购买</td>
+                                                <td>未付款</td>
+                                                <td>2019-08-19 15:26:21</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="pages-1" id="demo7"></div>
+                                </div>
+                            </div>
+                            <div class="orderManagement-jf theOrder-con"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 我的通知 -->
+                <div class="box">
+                    <div class="public-con">
+                        <div class="information-tit">我的通知</div>
+                        <div class="iNotice">
+                            <p class="iNotice-1 iNotice-t">
+                                <span>系统消息</span>
+                                <span class="gg-2"></span>
+                            </p>
+                            <p class="iNotice-t">
+                                <span>互动消息</span>
+                                <span class="gg-2"></span>
+                            </p>
+                        </div>
+                        <div class="iNotice-con">
+                            <div class="iNoticeSystem iNotice-c-t activess">
+                                <ul>
+                                    <li>
+                                        <div class="iNoticeSystem-img"><img src="./images/mytz.png" alt=""></div>
+                                        <div class="iNoticeSystem-con">
+                                            <p>系统管理员<span class="iNoticeSystem-con-sj">2019-08-19 15:06:89</span></p>
+                                            <p>全科试题有奖征集！全科试题有奖征集试题有奖征集！全科试题有有奖征集！全科试题有奖征集！奖征集！全科试
+                                                题有有奖征集！全科试题有奖征集！</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="iNoticeSystem-img"><img src="./images/mytz.png" alt=""></div>
+                                        <div class="iNoticeSystem-con">
+                                            <p>系统管理员<span class="iNoticeSystem-con-sj">2019-08-19 15:06:89</span></p>
+                                            <p>全科试题有奖征集！全科试题有奖征集试题有奖征集！全科试题有有奖征集！全科试题有奖征集！奖征集！全科试
+                                                题有有奖征集！全科试题有奖征集！</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="iNoticeSystem-img"><img src="./images/mytz.png" alt=""></div>
+                                        <div class="iNoticeSystem-con">
+                                            <p>系统管理员<span class="iNoticeSystem-con-sj">2019-08-19 15:06:89</span></p>
+                                            <p>全科试题有奖征集！全科试题有奖征集试题有奖征集！全科试题有有奖征集！全科试题有奖征集！奖征集！全科试
+                                                题有有奖征集！全科试题有奖征集！</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="iNoticeSystem-img"><img src="./images/mytz.png" alt=""></div>
+                                        <div class="iNoticeSystem-con">
+                                            <p>系统管理员<span class="iNoticeSystem-con-sj">2019-08-19 15:06:89</span></p>
+                                            <p>全科试题有奖征集！全科试题有奖征集试题有奖征集！全科试题有有奖征集！全科试题有奖征集！奖征集！全科试
+                                                题有有奖征集！全科试题有奖征集！</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="iNoticeSystem-img"><img src="./images/mytz.png" alt=""></div>
+                                        <div class="iNoticeSystem-con">
+                                            <p>系统管理员<span class="iNoticeSystem-con-sj">2019-08-19 15:06:89</span></p>
+                                            <p>全科试题有奖征集！全科试题有奖征集试题有奖征集！全科试题有有奖征集！全科试题有奖征集！奖征集！全科试
+                                                题有有奖征集！全科试题有奖征集！</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="pages-1" id="demo8"></div>
+                            </div>
+                            <div class="iNoticeInteractive iNotice-c-t"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 积分明细 -->
+                <div class="box">
+                    <div class="public-con">
+                        <div class="information-tit">积分查询</div>
+                        <div class="integralSubsidiary">
+                            <p class="integralSubsidiary-1 integralSubsidiary-g">
+                                <span>全部积分</span>
+                                <span class="gg-3"></span>
+                            </p>
+                            <p class="integralSubsidiary-g">
+                                <span>已赚积分</span>
+                                <span class="gg-3"></span>
+                            </p>
+                            <p class="integralSubsidiary-g">
+                                <span>消耗积分</span>
+                                <span class="gg-3"></span>
+                            </p>
+                        </div>
+                        <div class="integral-z">
+                            <div class="integralSubsidiary-qb integral-g activesss">
+                                <div class="integralSubsidiary-qb-top">
+                                    <label class="layui-form-label orderManagement-geg">根据时间查询:</label>
+                                    <span class="js-k">开始:</span>
+                                    <input type="text" class="layui-input" id="test4" placeholder="yyyy-MM-dd">
+                                    <!-- </div> -->
+                                    <span class="js-k">结束:</span>
+                                    <!-- <div class="layui-input-inline"> -->
+                                    <input type="text" class="layui-input" id="test5" placeholder="yyyy-MM-dd">
+                                    <!-- </div> -->
+                                    <span class="queryBtn">查询</span>
+                                </div>
+                                <div>
+                                    <table style="border-width:0;" class="layui-table" lay-skin="line">
+                                        <colgroup>
+                                            <col width="150">
+                                            <col width="150">
+                                            <col width="150">
+                                            <col width="150">
+                                            <col>
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>日期</th>
+                                                <th>收入/支出</th>
+                                                <th>项目</th>
+                                                <th>积分有效期</th>
+                                                <th>备注</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2019-08-12</td>
+                                                <td>+1999</td>
+                                                <td>获得积分</td>
+                                                <td>2019-08-12</td>
+                                                <td>备注的具体文字备注的</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2019-08-12</td>
+                                                <td>+1999</td>
+                                                <td>获得积分</td>
+                                                <td>2019-08-12</td>
+                                                <td>备注的具体文字备注的</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2019-08-12</td>
+                                                <td>+1999</td>
+                                                <td>获得积分</td>
+                                                <td>2019-08-12</td>
+                                                <td>备注的具体文字备注的</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2019-08-12</td>
+                                                <td>+1999</td>
+                                                <td>获得积分</td>
+                                                <td>2019-08-12</td>
+                                                <td>备注的具体文字备注的</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2019-08-12</td>
+                                                <td>+1999</td>
+                                                <td>获得积分</td>
+                                                <td>2019-08-12</td>
+                                                <td>备注的具体文字备注的</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2019-08-12</td>
+                                                <td>+1999</td>
+                                                <td>获得积分</td>
+                                                <td>2019-08-12</td>
+                                                <td>备注的具体文字备注的</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2019-08-12</td>
+                                                <td>+1999</td>
+                                                <td>获得积分</td>
+                                                <td>2019-08-12</td>
+                                                <td>备注的具体文字备注的</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="pages-1" id="demo9"></div>
+                                </div>
+                            </div>
+                            <div class="integralSubsidiary-yz integral-g"></div>
+                            <div class="integralSubsidiary-xh integral-g"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 邀请好友 -->
+                <div class="box">
+                    <div class="public-con">
+                        <div class="information-tit">邀请好友</div>
+                        <div class="inviteFriends">
+                            <p class="inviteFriends-tit">1、通过链接分享</p>
+                            <p class="inviteFriends-yq">
+                                <label class="layui-form-label inviteFriends-gg">我的专有邀请链接:</label>
+                                <input class="inviteFriends-inp" type="text" name="title" required lay-verify="required"
+                                    placeholder="请输入用户名" autocomplete="off" class="layui-input">
+                                <span class="inviteFriends-btn">复制邀请链接</span>
+                            </p>
+                            <p class="inviteFriends-tit">2、分享给好友</p>
+                            <div class="inviteFriends-z">
+                                <p class="inviteFriends-fs">一键发送:</p>
+                                <ul class="inviteFriends-tp">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                            <div class="inviteFriends-sd">
+                                <p>手动发送：点击复制按钮，然后点击复制按钮，点击复制按钮，然后点击复制按钮，点击复制按钮，然后点击复制按钮。</p>
+                            </div>
+                            <p class="inviteFriends-tit">3、分享推荐直接获得10E币，亲友注册直接获得20学分</p>
+                            <div class="inviteFriends-sb">
+                                文字说明点击复制按钮，然后点击复制按钮，点击复制按钮，然后点击复制按钮，点击复制按钮，然后点击复制按钮。
+                            </div>
+                        </div>
+                        <div class="information-tit friendsList">好友列表</div>
+                        <div class="friendsList-z">
+                            <div class="friendsList-btop">
+                                <ul>
+                                    <li>好友头像</li>
+                                    <li>好友昵称</li>
+                                    <li>添加日期</li>
+                                    <li>操作</li>
+                                </ul>
+                            </div>
+                            <div class="friendsList-bg">
+                                <ul>
+                                    <li>
+                                        <p><img src="./images/tx-1.png" alt=""></p>
+                                        <p>秦始皇</p>
+                                        <p>2019-05-13</p>
+                                        <p>删除</p>
+                                    </li>
+                                    <li>
+                                        <p><img src="./images/tx-1.png" alt=""></p>
+                                        <p>秦始皇</p>
+                                        <p>2019-05-13</p>
+                                        <p>删除</p>
+                                    </li>
+                                    <li>
+                                        <p><img src="./images/tx-1.png" alt=""></p>
+                                        <p>秦始皇</p>
+                                        <p>2019-05-13</p>
+                                        <p>删除</p>
+                                    </li>
+                                    <li>
+                                        <p><img src="./images/tx-1.png" alt=""></p>
+                                        <p>秦始皇</p>
+                                        <p>2019-05-13</p>
+                                        <p>删除</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="pages-1" id="demo10"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <!-- 内容区结束 -->
+    <!-- 教育经验 -->
+    <div class="educationExperience">
+        <img src="./images/index_page_end.png">
+    </div>
+    <!-- 底部开始 -->
+    <div class="indexFootB" style="width:100%;background-color:#f0f0f0;min-width: 1200px;">
+        <!--网站使用-->
+        <div class="index_end public_container clearfix">
+            <div class="clearfix-jz">
+                <div class="index_end_d_1 clearfix">
+                    <dl>
+                        <dt>
+                            网站使用
+                        </dt>
+                        <dd>
+                            <a href="http://club.dearedu.com/member/index.php" target="_blank">网站登录</a>
+                        </dd>
+                        <dd>
+                            <a href="http://club.dearedu.com/member/reg_new.php" target="_blank">网站注册</a>
+                        </dd>
+                        <dd>
+                            <a href="http://club.dearedu.com/member/buy.php" target="_blank">购买支付</a>
+                        </dd>
+                        <dd>
+                            <a href="http://s.dearedu.com/list.php?fr=1" target="_blank">免费下载</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="index_end_d_2 clearfix">
+                    <dl>
+                        <dt>
+                            会员帮助
+                        </dt>
+                        <dd>
+                            <a href="http://www.dearedu.com/help/index.php?t=cjwt" target="_blank">产品概念</a>
+                        </dd>
+                        <dd>
+                            <a href="http://www.dearedu.com/help/index.php?t=cpjfw" target="_blank">产品服务</a>
+                        </dd>
+                        <dd>
+                            <a href="http://www.dearedu.com/help/index.php?t=jytk" target="_blank">条款说明</a>
+                        </dd>
+                        <dd>
+                            <a href="http://club.dearedu.com/templets/default/tryout.htm" target="_blank">学校开通VIP</a>
+                        </dd>
+                        <dd>
+                            <a href="http://www.dearedu.com/help/index.php?t=cyrjxz" target="_blank">常用软件下载</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="index_end_d_3 clearfix">
+                    <dl>
+                        <dt>
+                            常见问题
+                        </dt>
+                        <dd>
+                            <a href="http://www.dearedu.com/help/index.php?t=wzlc" target="_blank">注册流程</a>
+                        </dd>
+                        <dd>
+                            <a href="http://club.dearedu.com/member/buy.php" target="_blank">充值方式</a>
+                        </dd>
+                        <dd>
+                            <a href="http://www.dearedu.com/help/index.php?t=yhxz" target="_blank">如何下载</a>
+                        </dd>
+                        <dd>
+                            <a href="http://www.dearedu.com/help/index.php?t=fwxy" target="_blank">服务协议</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="index_end_d_4 clearfix">
+                    <dl>
+                        <dt>
+                            互动交流
+                        </dt>
+                        <dd>
+                            <a href="http://www.dearedu.com/help/index.php?t=fkyj" target="_blank">留言中心</a>
+                        </dd>
+                        <dd>
+                            <a href="http://www.dearedu.com/help/index.php?t=jytd" target="_blank">教研团队</a>
+                        </dd>
+                        <dd>
+                            <a href="http://www.dearedu.com/help/index.php?t=lxwm" target="_blank">师资合作</a>
+                        </dd>
+                        <dd>
+                            <a href="http://www.dearedu.com/help/index.php?t=lxwm" target="_blank">资源合作</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="index_end_d_5 clearfix">
+                    <dl>
+                        <dt>
+                            关于我们
+                        </dt>
+                        <dd>
+                            <a href="http://www.dearedu.com/help/index.php?t=gywm" target="_blank">网站名片</a>
+                        </dd>
+                        <dd>
+                            <a href="http://www.dearedu.com/help/index.php?t=zcjy" target="_blank">总裁寄语</a>
+                        </dd>
+                        <dd>
+                            <a href="http://www.dearedu.com/mxzs/" target="_blank">名校合作</a>
+                        </dd>
+                        <dd>
+                            <a href="http://www.dearedu.com/help/index.php?t=swhz" target="_blank">商务合作</a>
+                        </dd>
+                        <dd>
+                            <a href="http://www.dearedu.com/help/index.php?t=xsrx" target="_blank">加入我们</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="weixin clearfix">
+                    <img src="./images/weixin.png">
+                    <p>第二教育网微信</p>
+                </div>
+                <div class="weibo clearfix">
+                    <img src=".//images/addqq.png">
+                    <p> 第二教育会员尊享Q群</p>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <div class="foot public_container clearfix">
+            <p>
+                <a target="_blank" href="http://www.dearedu.com/help/index.php?t=lxwm">网站合作</a>
+                &nbsp;|
+                &nbsp;<a target="_blank" href="http://www.dearedu.com/mxzs/">友情链接</a>
+                &nbsp;|
+                &nbsp;<a target="_blank" href="http://www.dearedu.com/help/index.php?t=xsrx">联系我们</a>
+                &nbsp;|
+                &nbsp;<a target="_blank" href="http://www.dearedu.com/help/index.php?t=cjwt">新手上路</a>
+                &nbsp;|
+                &nbsp;<a target="_blank" href="http://club.dearedu.com/templets/default/tryout.htm">我要留言</a>
+                &nbsp;|
+                &nbsp;<a target="_blank" href="http://www.dearedu.com/help/index.php?t=fwxy">版权声明</a>
+                &nbsp;|
+                &nbsp;<a target="_blank" href="http://www.dearedu.com/dejydt/">网站地图</a>
+                &nbsp;|
+                &nbsp;<a target="_blank" href="http://www.dearedu.com/zp/">诚聘英才</a>
+                <br>
+                免费热线：400-080-6798 传真：010-82780075 邮箱：dearedu@163.com
+                <!--北京市公安局海淀分局备案号：11010802017108-->
+                <br>
+                Copyright © 2001 - 2019 www.DearEDU.com 北京盛世慧才教育科技有限公司版权所有 <a href="http://beian.miit.gov.cn"
+                    target="_blank">京ICP备12044391号-1</a>
+                <br>
+
+            </p>
+            <div style="width: 250px; height: 20px; margin: 10px auto; font-weight: bold;">
+                <a target="_blank"
+                    href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802023134"><img
+                        style="float:left;margin-top: 1px" src="http://img.dearedu.com/www/2017/04/05/bntb.png">京公网安备
+                    11010802023134号</a>
+            </div>
+
+
+            <br>
+
+            <span style="color:#ccc">本网大部分资源来源于会员上传，除本网组织的资源外，版权归原作者所有，如有侵犯版权，请立刻和本网联系并提供证据，本网将在三个工作日内改正。</span>
+            <p></p>
+            <a class="trademark" href="#"><img src="./images/j-1.jpg"></a>
+            <a class="trademark" target="_blank" href="http://www.dearedu.com/kxwz.html"><img
+                    src="./images/j-2.jpg"></a>
+            <a class="trademark" target="_blank" href="http://net.china.com.cn/index.htm"><img
+                    src="./images/j-3.jpg"></a>
+            <a class="trademark" target="_blank" href="http://www.dearedu.com/tp.htm"><img src="./images/j-4.jpg"></a>
+        </div>
+    </div>
+    <!-- 底部结束 -->
 </body>
 
 <script src="./js/jquery.min.js"></script>
@@ -165,74 +808,72 @@
 <script src="./css/layui/layui.js"></script>
 <script src="./css/layui/layui.all.js"></script>
 <script>
-    layui.use('form', function () {
+    layui.use(['layer', 'form', 'laydate', 'laypage'], function () {
         var form = layui.form;
-    });
+        var laydate = layui.laydate;
+        var laypage = layui.laypage;
+        //常规用法
+        laydate.render({
+            elem: '#test3'
+        });
+        laydate.render({
+            elem: '#test2'
+        });
+        laydate.render({
+            elem: '#test4'
+        });
+        laydate.render({
+            elem: '#test5'
+        });
+        //完整功能
+        laypage.render({
+            elem: 'demo7'
+            , count: 100
+            , theme: '#E92B1D'
+            , layout: ['count', 'prev', 'page', 'next', 'limit', 'refresh', 'skip']
+            , jump: function (obj) {
 
-    $(".contentMall-left-list li").on("click", function () {
-        var index = $(this).index();
-        $(this).addClass("on").siblings().removeClass("on");
-        $(".contentMall-right .box").eq(index).addClass("active").siblings().removeClass("active");
+            }
+        });
+        laypage.render({
+            elem: 'demo8'
+            , count: 100
+            , theme: '#E92B1D'
+            , layout: ['count', 'prev', 'page', 'next', 'limit', 'refresh', 'skip']
+            , jump: function (obj) {
+
+            }
+        });
+        laypage.render({
+            elem: 'demo9'
+            , count: 100
+            , theme: '#E92B1D'
+            , layout: ['count', 'prev', 'page', 'next', 'limit', 'refresh', 'skip']
+            , jump: function (obj) {
+
+            }
+        });
+        laypage.render({
+            elem: 'demo10'
+            , count: 100
+            , theme: '#E92B1D'
+            , layout: ['count', 'prev', 'page', 'next', 'limit', 'refresh', 'skip']
+            , jump: function (obj) {
+
+            }
+        });
     });
-    window.onload = function () {
-        strYYYY = document.form1.YYYY.outerHTML;
-        strMM = document.form1.MM.outerHTML;
-        strDD = document.form1.DD.outerHTML;
-        LastDay = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-        //先给年下拉框赋内容
-        var y = new Date().getFullYear();
-        var str = strYYYY.substring(0, strYYYY.length - 9);
-        for (var i = (y - 70); i < (y + 1); i++) //以今年为准，前30年，后30年
-        {
-            str += "<option value='" + i + "'> " + i + "年</option>\r\n";
-        }
-        document.form1.YYYY.outerHTML = str + "</select>";
-        document.form1.YYYY.value = y;
-        //赋月份的下拉框
-        var str = strMM.substring(0, strMM.length - 9);
-        for (var i = 1; i < 13; i++) {
-            str += "<option value='" + i + "'> " + i + "月</option>\r\n";
-        }
-        document.form1.MM.outerHTML = str + "</select>";
-        document.form1.MM.value = new Date().getMonth() + 1;
-        var n = LastDay[new Date().getMonth()];
-        if (new Date().getMonth() == 1 && IsRun(YYYYvalue)) n++;
-        writeDay(n); //赋日期下拉框
-        document.form1.DD.value = new Date().getDate();
+    function dgh(d, t, y, v) {
+        $(d).on("click", function () {
+            var index = $(this).index();
+            $(this).addClass(t).siblings().removeClass(t);
+            $(y).eq(index).addClass(v).siblings().removeClass(v);
+        });
     }
-    function YYYYMM(str) //年发生变化时日期发生变化(主要是判断闰平年)
-    {
-        var MMvalue = document.form1.MM.options[document.form1.MM.selectedIndex].value;
-        // if (MMvalue == "") {
-        //     DD.outerHTML = strDD;
-        //     return;
-        // }
-        var n = LastDay[MMvalue - 1];
-        if (MMvalue == 2 && IsRun(str)) n++;
-        writeDay(n)
-    }
-    function MMDD(str) //月发生变化时日期联动
-    {
-        var YYYYvalue = document.form1.YYYY.options[document.form1.YYYY.selectedIndex].value;
-        // if (str == "") {
-        //     DD.outerHTML = strDD;
-        //     return;
-        // }
-        var n = LastDay[str - 1];
-        if (str == 2 && IsRun(YYYYvalue)) n++;
-        writeDay(n)
-    }
-    function writeDay(n) //据条件写日期的下拉框
-    {
-        var s = strDD.substring(0, strDD.length - 9);
-        for (var i = 1; i < (n + 1); i++)
-            s += "<option value='" + i + "'> " + i + "日</option>\r\n";
-        document.form1.DD.outerHTML = s + "</select>";
-    }
-    function IsRun(year) //判断是否闰平年
-    {
-        return (0 == year % 4 && (year % 100 != 0 || year % 400 == 0))
-    }
+    dgh(".orderManagement .theOrder", "orderSelected", ".orderManagement-con .theOrder-con", "actives");
+    dgh(".contentMall-left-list li", "on", ".contentMall-right .box", "active");
+    dgh(".iNotice .iNotice-t", "iNotice-1", ".iNotice-con .iNotice-c-t", "activess");
+    dgh(".integralSubsidiary .integralSubsidiary-g", "integralSubsidiary-1", ".integral-z .integral-g", "activesss");
 </script>
 
 </html>
